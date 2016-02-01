@@ -1,0 +1,54 @@
+Hello. Project notes go here.
+
+
+WordPress Core Version
+==
+
+The major-version core for this project is: 4.2
+
+https://wordpress.org/download/release-archive/
+
+
+Downloading WordPress
+==
+
+1. Grab the zip you need for a fresh build.
+
+    1.a. Match the core version. Replace X.X with the core version for the project listed above.
+    curl -O https://wordpress.org/wordpress-X.X.zip
+    
+    1.b. If you know that the project's major version is current, install the latest that includes minor patches. 
+    curl -O https://wordpress.org/latest.zip
+	
+2. Unzip the file you just downloaded
+unzip wordpress-X.X.zip
+
+3. Copy files using either the Mac (see 3.a.) or Linux (see 3.b.) command
+
+    3.a. For Mac OS X (BSD): Copy the unzipped WordPress files
+    cp -r wordpress/ ./
+	
+    3.b. For Linux (GNU): Copy the unzipped WordPress files
+    cp -RT wordpress/ ./
+
+4. Remove the zip
+rm wordpress-X-X.zip
+
+5. Remove the unzipped /wordpress/ files
+rm -fr wordpress/
+
+
+Plugins
+==
+
+Advanced Custom Fields Pro
+(5.3.1 Licensed)
+
+CMS Tree Page View
+https://downloads.wordpress.org/plugin/cms-tree-page-view.1.2.33.zip
+
+Contact Form 7
+https://downloads.wordpress.org/plugin/contact-form-7.4.3.zip
+
+Quick Page/Post Redirect Plugin
+https://downloads.wordpress.org/plugin/quick-pagepost-redirect-plugin.5.1.5.zip

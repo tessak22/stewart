@@ -1,0 +1,38 @@
+# Based on https://gist.github.com/redoPop/444295
+
+# Ignore everything in the root except the "wp-content" directory.
+/*
+!.gitignore
+!wp-content/
+
+# WINDMILL: Also track certain project-related files.
+!.gitattributes
+!.notes
+!.htaccess
+!robots-dev.txt
+!robots-live.txt
+!wp-config.php
+!branding/
+
+# Ignore everything in the "wp-content" directory, except the "plugins"
+# and "themes" directories.
+wp-content/*
+!wp-content/plugins/
+!wp-content/themes/
+
+# WINDMILL: Also track media uploads.
+!wp-content/uploads/
+
+# Ignore everything in the "plugins" directory, except the plugins you
+# specify (see the commented-out examples for hints on how to do this.)
+wp-content/plugins/*
+# !wp-content/plugins/my-single-file-plugin.php
+# !wp-content/plugins/my-directory-plugin/
+
+# Ignore everything in the "themes" directory, except the themes you
+# specify (see the commented-out example for a hint on how to do this.)
+wp-content/themes/*
+# !wp-content/themes/my-theme/
+
+# WINDMILL: Track the Bedstone theme.
+!wp-content/themes/bedstone/

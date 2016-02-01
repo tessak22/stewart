@@ -1,0 +1,49 @@
+# WINDMILL CUSTOM
+# add www prefix
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteCond %{HTTP_HOST} ^example\.com$ [NC]
+RewriteRule ^(.*) http://www.example.com/$1 [R=301,L]
+</IfModule>
+
+# WINDMILL CUSTOM
+# hide git directories and files
+RedirectMatch 404 /\.git
+RedirectMatch 404 /\.notes
+
+# HARDENING
+# per http://codex.wordpress.org/Hardening_WordPress
+
+# HARDENING: Block the include-only files.
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^wp-admin/includes/ - [F,L]
+RewriteRule !^wp-includes/ - [S=3]
+RewriteRule ^wp-includes/[^/]+\.php$ - [F,L]
+RewriteRule ^wp-includes/js/tinymce/langs/.+\.php - [F,L]
+RewriteRule ^wp-includes/theme-compat/ - [F,L]
+</IfModule>
+
+# HARDENING: Deny access to config
+<files wp-config.php>
+order allow,deny
+deny from all
+</files>
+<files wp-config-local.php>
+order allow,deny
+deny from all
+</files>
+
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+# END WordPress

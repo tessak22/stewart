@@ -1,0 +1,160 @@
+/**
+ *     project responsive
+ */
+@media only screen and (max-width: 1199px) {
+    .footer-features .feature-icon img {max-width: 100%; height: auto;}
+    .content-box img {max-width: 100%; height: auto;}
+}
+
+@media only screen and (max-width: 991px) {
+    html {
+        font-size: 16px;
+        background: #323232;
+    }
+    body.sticky-site-footer {
+        margin-bottom: 123px;  /* match .site-footer height */
+    }
+    body.sticky-site-footer .site-footer {
+        height: 123px; /* match body.sticky-site-footer margin-bottom */
+    }
+    h1 {
+        font-size: 3.125em;
+    }
+    .content .introduction {
+
+    }
+    .utility {
+        top: 0;
+    }
+    .toggle-nav {
+        display: block;
+    }
+
+    /*Responsive Off Canvas Menu*/
+    .nav-open {
+        -webkit-transform: translateX(-270px);
+        -moz-transform: translateX(-270px);
+        -ms-transform: translateX(-270px);
+        transform: translateX(-270px);}
+    .nav-main {
+        background: #323232; /*Apply this BG color to html ^ too for chrome*/
+        z-index: 101;
+        display: block;
+        overflow-x: hidden;
+        position: fixed;
+        right: 0;
+        top: 0;
+        -webkit-transform: translateX(270px);
+        -moz-transform: translateX(270px);
+        -ms-transform: translateX(270px);
+        transform: translateX(270px);
+        width: 270px;
+        height: 100%;
+        padding-top: 10px;
+        margin: 0;
+    }
+    .nav {
+        float: left;
+    }
+    .nav > li {
+        display: block;
+    }
+    .nav > li > a {
+        color: #fff;
+        padding: 6px 15px;
+    }
+    .nav > li > a:hover,  .nav > li > a:active {
+        color: #A40F0A;
+        background: transparent;
+    }
+    .nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
+        background: transparent;
+        color: #A40F0A;
+    }
+    .nav > li > a:hover, .nav > li > a:active, .nav > li > a:focus, .nav .open > a, .nav .open > a:hover, .nav .open > a:focus, .nav > li.current_page_item > a, .nav > li.current_page_parent > a.dropdown-toggle {
+        border-color: transparent;
+    }
+    .dropdown-menu {
+      background: transparent;
+      border: none;
+      box-shadow: none;
+      margin-left: 1.250em;
+      padding-top: 0;
+      width: 100%;
+      position: relative;
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+    .dropdown-menu > li {
+        border-bottom: none;
+    }
+    .dropdown-menu > li > a {
+        color: #fff;
+        padding: 0.375em 0.938em;
+    }
+    .dropdown-menu > li > a:hover, .dropdown-menu > li > a:active {
+        color: #A40F0A;
+        background: transparent;
+    }
+    .dropdown > a:before {
+        content: "\f067";
+        font-family: "FontAwesome";
+        padding-right: 0.625em;
+    }
+    /*End of Responsive Off Canvas Menu*/
+
+    .footer-features {
+        background: linear-gradient(to top, #e3e3e3 52%, #f1f2f2 52%);
+    }
+
+    .whitepapers-feature {
+        padding-top: 85px;
+    }
+
+    .content-box.black h2:after {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    html { font-size: 16px; } /* http://j.eremy.net/confused-about-rem-and-em/ */
+    body.sticky-site-footer { margin-bottom: 123px; } /* match .site-footer height */
+    body.sticky-site-footer .site-footer { height: 123px; } /* match body.sticky-site-footer margin-bottom */
+    h1 {
+        font-size: 2.000em;
+    }
+    .content .introduction {
+        font-size: 1.625em;
+    }
+    .logo {
+        width: 50%;
+        float: left;
+    }
+    .utility {
+        width: 50%;
+    }
+    .sticky-text {
+        display: none;
+    }
+    .footer-features {
+        padding-top: 40px;
+    }
+    .footer-features h3 {
+        margin-top: 20px;
+    }
+    .lets-connect .wpcf7 .form-group .col-sm-6:first-child {
+        margin-bottom: 25px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    html { font-size: 16px; } /* http://j.eremy.net/confused-about-rem-and-em/ */
+    body.sticky-site-footer { margin-bottom: 123px; } /* match .site-footer height */
+    body.sticky-site-footer .site-footer { height: 123px; } /* match body.sticky-site-footer margin-bottom */
+    .content .introduction {
+        font-size: 1.500em;
+    }
+    h2 {
+        font-size: 1.125em;
+    }
+}

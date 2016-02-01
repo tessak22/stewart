@@ -1,0 +1,51 @@
+/**
+ *     project wysiwyg style
+ */
+
+
+body#tinymce.wp-editor a {
+    color: #74b2b4;
+}
+body#tinymce.wp-editor h2 {
+	color: #c00600;
+	font-size: 30px;
+	font-weight: bold;
+}
+body#tinymce.wp-editor h3 {
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #323232;
+}
+body#tinymce.wp-editor h4 {
+	font-weight: bold;
+}
+body#tinymce.wp-editor .call-to-action {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+body#tinymce.wp-editor .callout {
+	font-size: 1.389em;
+    padding-top: 1em;
+}
+body#tinymce.wp-editor .callout + h4 {
+    font-weight: bold;
+    color: #b1b3b6;
+    text-transform: uppercase;
+    padding-bottom: 1.5em;
+}
+body#tinymce.acf_content h2 {
+	font-weight: bold;
+	font-size: 30px;
+	color: #323232;
+}
+body#tinymce.acf_content p.callout {
+	font-style: italic;
+	font-size: 23px;
+	border-top: none;
+	color: #323232;
+	padding: 0;
+}
+body#tinymce.wp-editor {
+
+}
